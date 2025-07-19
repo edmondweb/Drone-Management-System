@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Scan Drone Solutions - Powering Possibilities Through the Sky | Kenya</title>
+    <meta name="description" content="Leading drone services in Kenya. Live events, agriculture, industrial inspections, mapping, solar surveys, and drone light shows. KCAA compliant with nationwide service.">
+    <meta name="keywords" content="drone services Kenya, aerial photography, agricultural drones, industrial inspections, drone light shows, KCAA licensed, Nairobi drone services">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --eco-gradient: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            --dark-bg: #0a0a0a;
+            --light-bg: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --accent-blue: #667eea;
+            --accent-green: #4ecdc4;
+            --accent-orange: #ff9a56;
+            --surface: #f8fafc;
+            --border: #e2e8f0;
+            --shadow: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Custom Cursor */
+        body {
+            cursor: none;
+        }
+
+        .custom-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+            mix-blend-mode: difference;
+        }
+
+        .custom-cursor.hover {
+            transform: scale(2);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            padding: 0.8rem 1.5rem;
+            background: var(--primary-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .btn-primary, .btn-secondary, .btn-outline {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--accent-blue);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-secondary {
+            background: var(--secondary-gradient);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover, .btn-outline:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Quick Links Banner */
+        .quick-links {
+            background: var(--surface);
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .quick-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .quick-link {
+            background: white;
+            padding: 2rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .quick-link:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--accent-blue);
+        }
+
+        .quick-link i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(2) {
+            animation-delay: -2s;
+        }
+
+        .floating-element:nth-child(3) {
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            background: var(--surface);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 2rem;
+        }
+
+        .service-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+
+        /* Booking Portal Styles */
+        .booking-portal {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .booking-wizard {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+        }
+
+        .wizard-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        /* Payment Options */
+        .payment-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .payment-option {
+            padding: 1.5rem;
+            border: 2px solid var(--border);
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .payment-option:hover, .payment-option.selected {
+            border-color: var(--accent-blue);
+            background: var(--surface);
+        }
+
+        .payment-option img {
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 5rem 5%;
+            background: var(--dark-bg);
+            color: white;
+        }
+
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: white;
+            color: var(--dark-bg);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        /* Blog Section */
+        .blog {
+            padding: 5rem 5%;
+            background: white;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 5%;
+            background: var(--surface);
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item i {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 4rem 5% 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: var(--accent-blue);
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 2rem;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid,
+            .portfolio-grid,
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --light-bg: #1a1a1a;
+                --text-primary: #ffffff;
+                --text-secondary: #cccccc;
+                --surface: #2a2a2a;
+                --border: #404040;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Micro-interactions */
+        .micro-interaction {
+            transition: all 0.2s ease;
+        }
+
+        .micro-interaction:hover {
+            transform: scale(1.05);
+        }
+
+        /* Live Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .chat-widget:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto 0;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            padding: 1rem 2rem;
+            background: white;
+            color: var(--accent-blue);
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        /* Language Toggle */
+        .language-toggle {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 25px;
+            padding: 0.5rem;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .language-toggle button {
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .language-toggle button.active {
+            background: var(--primary-gradient);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button class="active" data-lang="en">EN</button>
+        <button data-lang="sw">SW</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Eco Scan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#hire">Hire a Drone</a></li>
+                <li><a href="#import">Import</a></li>
+                <li><a href="#franchise">Franchise</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#hire" class="cta-button">Hire a Drone</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://via.placeholder.com/1920x1080/667eea/ffffff?text=Drone+Footage" type="video/mp4">
+        </video>
+        
+        <!-- Floating Elements -->
+        <div class="floating-element" style="top: 20%; left: 10%; width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+        <div class="floating-element" style="top: 60%; right: 15%; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+        <div class="floating-element" style="bottom: 30%; left: 20%; width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+
+        <div class="hero-content">
+            <h1>Powering Possibilities Through the Sky</h1>
+            <p>Your Trusted Partner for Drone Technology in Kenya</p>
+            <div class="hero-buttons">
+                <a href="#hire" class="btn-primary">
+                    <i class="fas fa-helicopter"></i>
+                    Hire a Drone
+                </a>
+                <a href="#import" class="btn-secondary">
+                    <i class="fas fa-shipping-fast"></i>
+                    Import a Drone to Kenya
+                </a>
+                <a href="#franchise" class="btn-outline">
+                    <i class="fas fa-handshake"></i>
+                    Franchise Opportunities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Banner -->
+    <section class="quick-links">
+        <div class="quick-links-grid">
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-video"></i>
+                <h3>Live Events</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-search-location"></i>
+                <h3>Search & Rescue</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-seedling"></i>
+                <h3>Agriculture</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-industry"></i>
+                <h3>Industrial</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Solar</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-hard-hat"></i>
+                <h3>Construction</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Mapping & Survey</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-magic"></i>
+                <h3>Light Shows</h3>
+            </a>
+            <a href="#services" class="quick-link micro-interaction">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Consultancy</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Leading Drone Innovation in Africa</h2>
+                <p>Eco Scan Drone Solutions is pioneering the future of aerial technology across Kenya and East Africa. We deliver eco-efficient drone solutions tailored specifically to Africa's unique needs, combining cutting-edge technology with local expertise.</p>
+               
+               <div class="about-features">
+                   <div class="feature-card">
+                       <h4><i class="fas fa-certificate"></i> KCAA Compliant</h4>
+                       <p>Fully licensed and compliant with Kenya Civil Aviation Authority regulations</p>
+                   </div>
+                   <div class="feature-card">
+                       <h4><i class="fas fa-users"></i> Expert Team</h4>
+                       <p>Licensed drone pilots, engineers, and aviation consultants</p>
+                   </div>
+                   <div class="feature-card">
+                       <h4><i class="fas fa-map-marker-alt"></i> Nationwide Service</h4>
+                       <p>Coverage across all 47 counties in Kenya</p>
+                   </div>
+                   <div class="feature-card">
+                       <h4><i class="fas fa-leaf"></i> Eco-Efficient</h4>
+                       <p>Sustainable drone solutions for environmental conservation</p>
+                   </div>
+               </div>
+           </div>
+           <div class="about-image">
+               <img src="https://via.placeholder.com/600x400/4ecdc4/ffffff?text=Drone+Team" alt="Eco Scan Team" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow);">
+           </div>
+       </div>
+   </section>
+
+   <!-- Services Section -->
+   <section id="services" class="services">
+       <div class="section-header">
+           <h2>Our Comprehensive Drone Services</h2>
+           <p>From cinematic aerial shots to precision industrial inspections, we've got the sky covered</p>
+       </div>
+       
+       <div class="services-grid">
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/ff9a56/ffffff?text=Live+Events" alt="Live Events">
+               <div class="service-content">
+                   <h3>Live Events & Cinematography</h3>
+                   <p>Capture stunning aerial footage for weddings, festivals, concerts, and corporate events. Our cinematic drone services bring your special moments to life from breathtaking perspectives.</p>
+                   <ul>
+                       <li>4K/8K video recording</li>
+                       <li>Professional editing</li>
+                       <li>Live streaming capabilities</li>
+                       <li>Same-day delivery</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Get a Quote</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/4ecdc4/ffffff?text=Search+Rescue" alt="Search & Rescue">
+               <div class="service-content">
+                   <h3>Search & Rescue Operations</h3>
+                   <p>Emergency response drone services for disaster zones, flood monitoring, forest patrols, and missing person searches. Rapid deployment with thermal imaging capabilities.</p>
+                   <ul>
+                       <li>Thermal imaging cameras</li>
+                       <li>Real-time video feed</li>
+                       <li>GPS coordinate mapping</li>
+                       <li>24/7 emergency response</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Emergency Contact</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=Agriculture" alt="Agriculture">
+               <div class="service-content">
+                   <h3>Agricultural Applications</h3>
+                   <p>Revolutionize farming with precision agriculture. Crop health monitoring, drone seeding, pesticide application, and yield optimization for sustainable farming practices.</p>
+                   <ul>
+                       <li>Crop health analysis</li>
+                       <li>Precision spraying</li>
+                       <li>Soil condition mapping</li>
+                       <li>Yield prediction</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Book Demo</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/764ba2/ffffff?text=Industrial" alt="Industrial">
+               <div class="service-content">
+                   <h3>Industrial Inspections</h3>
+                   <p>Safe and efficient inspections of towers, pipelines, offshore rigs, and industrial facilities. Reduce downtime and safety risks with our advanced inspection drones.</p>
+                   <ul>
+                       <li>Infrastructure assessment</li>
+                       <li>Safety compliance reports</li>
+                       <li>Preventive maintenance</li>
+                       <li>3D modeling</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Schedule Inspection</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/f5576c/ffffff?text=Solar+Panels" alt="Solar Inspections">
+               <div class="service-content">
+                   <h3>Solar Panel Inspections</h3>
+                   <p>Optimize solar farm performance with thermal imaging inspections. Detect panel faults, hot spots, and efficiency issues to maximize energy output and ROI.</p>
+                   <ul>
+                       <li>Thermal fault detection</li>
+                       <li>Performance optimization</li>
+                       <li>Maintenance scheduling</li>
+                       <li>Efficiency reports</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Optimize Solar</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/44a08d/ffffff?text=Construction" alt="Construction">
+               <div class="service-content">
+                   <h3>Construction Monitoring</h3>
+                   <p>Track construction progress, conduct safety audits, and create detailed site documentation. Improve project management with regular aerial surveys.</p>
+                   <ul>
+                       <li>Progress tracking</li>
+                       <li>Safety audits</li>
+                       <li>Site documentation</li>
+                       <li>Volume calculations</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Monitor Project</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/ff6b6b/ffffff?text=Mapping" alt="Mapping">
+               <div class="service-content">
+                   <h3>Mapping & Surveying</h3>
+                   <p>High-precision aerial mapping for land registry, real estate development, mining operations, and topographical surveys. Professional-grade accuracy guaranteed.</p>
+                   <ul>
+                       <li>Topographical mapping</li>
+                       <li>Land registry surveys</li>
+                       <li>Mining assessments</li>
+                       <li>Real estate documentation</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Request Survey</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/ffd93d/ffffff?text=Light+Shows" alt="Light Shows">
+               <div class="service-content">
+                   <h3>Drone Light Shows</h3>
+                   <p>Spectacular eco-friendly drone light shows for public and private events. A sustainable alternative to fireworks with synchronized LED displays in the night sky.</p>
+                   <ul>
+                       <li>Custom choreography</li>
+                       <li>Synchronized music</li>
+                       <li>Eco-friendly alternative</li>
+                       <li>Crowd-safe entertainment</li>
+                   </ul>
+                   <a href="#hire" class="btn-primary" style="margin-top: 1rem;">Create Magic</a>
+               </div>
+           </div>
+
+           <div class="service-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/6c5ce7/ffffff?text=Consultancy" alt="Consultancy">
+               <div class="service-content">
+                   <h3>Drone Consultancy</h3>
+                   <p>Expert guidance on drone licensing, KCAA compliance, training programs, and implementation strategies. Navigate Kenya's drone regulations with confidence.</p>
+                   <ul>
+                       <li>KCAA licensing support</li>
+                       <li>Compliance consultation</li>
+                       <li>Training programs</li>
+                       <li>Implementation strategy</li>
+                   </ul>
+                   <a href="#contact" class="btn-primary" style="margin-top: 1rem;">Get Expert Help</a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Hire a Drone Portal -->
+   <section id="hire" class="booking-portal">
+       <div class="section-header">
+           <h2>Hire a Drone - Easy Booking</h2>
+           <p>Get your aerial project started in just a few clicks</p>
+       </div>
+       
+       <div class="booking-wizard">
+           <div class="wizard-steps">
+               <div class="step">
+                   <div class="step-number">1</div>
+                   <span>Select Service</span>
+               </div>
+               <div class="step">
+                   <div class="step-number">2</div>
+                   <span>Choose Package</span>
+               </div>
+               <div class="step">
+                   <div class="step-number">3</div>
+                   <span>Schedule & Pay</span>
+               </div>
+           </div>
+
+           <form id="bookingForm">
+               <div class="form-group">
+                   <label for="useCase">Select Your Use Case</label>
+                   <select id="useCase" name="useCase" required>
+                       <option value="">Choose a service...</option>
+                       <option value="live-events">Live Events & Cinematography</option>
+                       <option value="search-rescue">Search & Rescue</option>
+                       <option value="agriculture">Agricultural Applications</option>
+                       <option value="industrial">Industrial Inspections</option>
+                       <option value="solar">Solar Panel Inspections</option>
+                       <option value="construction">Construction Monitoring</option>
+                       <option value="mapping">Mapping & Surveying</option>
+                       <option value="light-shows">Drone Light Shows</option>
+                       <option value="consultancy">Drone Consultancy</option>
+                   </select>
+               </div>
+
+               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                   <div class="form-group">
+                       <label for="location">Location</label>
+                       <input type="text" id="location" name="location" placeholder="Enter location in Kenya" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="date">Preferred Date</label>
+                       <input type="date" id="date" name="date" required>
+                   </div>
+               </div>
+
+               <div class="form-group">
+                   <label>Choose Your Package</label>
+                   <div class="payment-options">
+                       <div class="payment-option" data-package="standard">
+                           <h4>Standard</h4>
+                           <p>Basic drone service</p>
+                           <strong>KES 15,000</strong>
+                       </div>
+                       <div class="payment-option" data-package="professional">
+                           <h4>Professional</h4>
+                           <p>Advanced features included</p>
+                           <strong>KES 25,000</strong>
+                       </div>
+                       <div class="payment-option" data-package="premium">
+                           <h4>Premium</h4>
+                           <p>Full-service package</p>
+                           <strong>KES 40,000</strong>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="form-group">
+                   <label>Add-ons</label>
+                   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                       <label style="display: flex; align-items: center; gap: 0.5rem;">
+                           <input type="checkbox" name="addons" value="operator"> Licensed Operator (+KES 5,000)
+                       </label>
+                       <label style="display: flex; align-items: center; gap: 0.5rem;">
+                           <input type="checkbox" name="addons" value="thermal"> Thermal Imaging (+KES 8,000)
+                       </label>
+                       <label style="display: flex; align-items: center; gap: 0.5rem;">
+                           <input type="checkbox" name="addons" value="editing"> Video Editing (+KES 3,000)
+                       </label>
+                       <label style="display: flex; align-items: center; gap: 0.5rem;">
+                           <input type="checkbox" name="addons" value="rush"> Rush Delivery (+KES 2,000)
+                       </label>
+                   </div>
+               </div>
+
+               <div class="form-group">
+                   <label for="instructions">Special Instructions</label>
+                   <textarea id="instructions" name="instructions" rows="4" placeholder="Any specific requirements or details about your project..."></textarea>
+               </div>
+
+               <div class="form-group">
+                   <label>Payment Method</label>
+                   <div class="payment-options">
+                       <div class="payment-option" data-payment="mpesa">
+                           <img src="https://via.placeholder.com/100x40/00a651/ffffff?text=M-PESA" alt="M-PESA">
+                           <h4>M-PESA</h4>
+                       </div>
+                       <div class="payment-option" data-payment="visa">
+                           <img src="https://via.placeholder.com/100x40/1a1f71/ffffff?text=VISA" alt="Visa">
+                           <h4>Visa/Mastercard</h4>
+                       </div>
+                       <div class="payment-option" data-payment="bank">
+                           <img src="https://via.placeholder.com/100x40/2c3e50/ffffff?text=BANK" alt="Bank Transfer">
+                           <h4>Bank Transfer</h4>
+                       </div>
+                   </div>
+               </div>
+
+               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                   <div class="form-group">
+                       <label for="name">Full Name</label>
+                       <input type="text" id="name" name="name" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="phone">Phone Number</label>
+                       <input type="tel" id="phone" name="phone" placeholder="+254..." required>
+                   </div>
+               </div>
+
+               <div class="form-group">
+                   <label for="email">Email Address</label>
+                   <input type="email" id="email" name="email" required>
+               </div>
+
+               <button type="submit" class="btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem;">
+                   <i class="fas fa-credit-card"></i>
+                   Confirm Booking & Pay
+               </button>
+           </form>
+       </div>
+   </section>
+
+   <!-- Import Section -->
+   <section id="import" class="import-section" style="padding: 5rem 5%; background: var(--surface);">
+       <div class="section-header">
+           <h2>Import a Drone to Kenya - Hassle-Free</h2>
+           <p>Navigate KCAA regulations with our expert import assistance</p>
+       </div>
+
+       <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+           <div>
+               <h3>Why Choose Our Import Service?</h3>
+               <div class="feature-card" style="margin-bottom: 2rem;">
+                   <h4><i class="fas fa-shield-alt"></i> KCAA Compliance Guaranteed</h4>
+                   <p>We handle all regulatory requirements and documentation for seamless import approval</p>
+               </div>
+               <div class="feature-card" style="margin-bottom: 2rem;">
+                   <h4><i class="fas fa-shipping-fast"></i> Supported Brands</h4>
+                   <p>DJI, Parrot, Autel, Skydio, and other leading drone manufacturers</p>
+               </div>
+               <div class="feature-card" style="margin-bottom: 2rem;">
+                   <h4><i class="fas fa-customs"></i> Customs Clearance</h4>
+                   <p>Full customs clearance and delivery to your location across Kenya</p>
+               </div>
+
+               <h4>Import Requirements:</h4>
+               <ul style="margin: 1rem 0; padding-left: 2rem;">
+                   <li>KCAA import permit (mandatory for all drones) </li>
+                   <li>Valid identification and police clearance certificate </li>
+                   <li>Certificate of registration upon import </li>
+                   <li>Purpose of use documentation</li>
+                   <li>Invoice from manufacturer/supplier</li>
+               </ul>
+           </div>
+
+           <div class="contact-form">
+               <h3>Request Import Assistance</h3>
+               <form id="importForm">
+                   <div class="form-group">
+                       <label for="droneModel">Select Drone Model</label>
+                       <select id="droneModel" name="droneModel" required>
+                           <option value="">Choose a model...</option>
+                           <option value="dji-mavic-3">DJI Mavic 3 Pro</option>
+                           <option value="dji-air-3">DJI Air 3</option>
+                           <option value="dji-mini-4">DJI Mini 4 Pro</option>
+                           <option value="parrot-anafi">Parrot ANAFI Series</option>
+                           <option value="autel-evo">Autel EVO Series</option>
+                           <option value="custom">Custom/Other Model</option>
+                       </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="purpose">Purpose of Use</label>
+                       <select id="purpose" name="purpose" required>
+                           <option value="">Select purpose...</option>
+                           <option value="commercial">Commercial Operations</option>
+                           <option value="recreational">Recreational/Hobby</option>
+                           <option value="research">Research/Academic</option>
+                           <option value="government">Government/NGO</option>
+                       </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="invoice">Upload Invoice/Proforma</label>
+                       <input type="file" id="invoice" name="invoice" accept=".pdf,.jpg,.png" required>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="importName">Full Name</label>
+                       <input type="text" id="importName" name="importName" required>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="importPhone">Phone Number</label>
+                       <input type="tel" id="importPhone" name="importPhone" placeholder="+254..." required>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="importEmail">Email Address</label>
+                       <input type="email" id="importEmail" name="importEmail" required>
+                   </div>
+
+                   <button type="submit" class="btn-primary" style="width: 100%;">
+                       <i class="fas fa-paper-plane"></i>
+                       Request Import Assistance
+                   </button>
+               </form>
+           </div>
+       </div>
+
+       <!-- Import FAQ -->
+       <div style="max-width: 1000px; margin: 4rem auto 0;">
+           <h3>Frequently Asked Questions</h3>
+           <div style="display: grid; gap: 1rem; margin-top: 2rem;">
+               <details style="background: white; padding: 1.5rem; border-radius: 10px; cursor: pointer;">
+                   <summary style="font-weight: 600; margin-bottom: 1rem;">How long does the import process take?</summary>
+                   <p>The KCAA requires commercial operators to apply at least 90 days in advance , but standard imports typically take 2-4 weeks with our assistance.</p>
+               </details>
+               <details style="background: white; padding: 1.5rem; border-radius: 10px; cursor: pointer;">
+                   <summary style="font-weight: 600; margin-bottom: 1rem;">What are the import duties and taxes?</summary>
+                   <p>Import duties vary by drone value and purpose. We provide detailed cost breakdowns during consultation.</p>
+               </details>
+               <details style="background: white; padding: 1.5rem; border-radius: 10px; cursor: pointer;">
+                   <summary style="font-weight: 600; margin-bottom: 1rem;">Can tourists bring drones into Kenya?</summary>
+                   <p>Tourists can apply for a 30-day temporary permit , though only Kenyan citizens and residents are eligible for permanent ownership .</p>
+               </details>
+           </div>
+       </div>
+   </section>
+
+   <!-- Franchise Section -->
+   <section id="franchise" class="franchise-section" style="padding: 5rem 5%; background: white;">
+       <div class="section-header">
+           <h2>Become a Drone Tech Leader in Your County</h2>
+           <p>Join Kenya's fastest-growing drone services network</p>
+       </div>
+
+       <div style="max-width: 1200px; margin: 0 auto;">
+           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
+               <div class="service-card">
+                   <div class="service-content">
+                       <h3><i class="fas fa-rocket"></i> What You Get</h3>
+                       <ul style="margin-top: 1rem;">
+                           <li>Complete branding package</li>
+                           <li>Technical training and certification</li>
+                           <li>Equipment leasing options</li>
+                           <li>Marketing support and leads</li>
+                           <li>Ongoing technical support</li>
+                           <li>Territory protection</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="service-card">
+                   <div class="service-content">
+                       <h3><i class="fas fa-user-check"></i> Who We're Looking For</h3>
+                       <ul style="margin-top: 1rem;">
+                           <li>Business professionals and entrepreneurs</li>
+                           <li>Engineers and technical experts</li>
+                           <li>Agricultural extension officers</li>
+                           <li>Photography/videography professionals</li>
+                           <li>Former military/aviation personnel</li>
+                           <li>Strong local network and connections</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="service-card">
+                   <div class="service-content">
+                       <h3><i class="fas fa-chart-line"></i> Investment & Returns</h3>
+                       <ul style="margin-top: 1rem;">
+                           <li>Initial investment: KES 500K - 2M</li>
+                           <li>Training and setup: 4-6 weeks</li>
+                           <li>Break-even: 8-12 months</li>
+                           <li>Revenue sharing: 70/30 split</li>
+                           <li>Territory exclusivity guaranteed</li>
+                           <li>Ongoing royalty: 8% of revenue</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Testimonials -->
+           <div style="background: var(--surface); padding: 3rem; border-radius: 20px; margin-bottom: 3rem;">
+               <h3 style="text-align: center; margin-bottom: 2rem;">What Our Franchisees Say</h3>
+               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                   <div style="background: white; padding: 2rem; border-radius: 15px;">
+                       <p><em>"Within 6 months, our Mombasa franchise was booking 20+ events per month. The support from Eco Scan has been exceptional."</em></p>
+                       <div style="margin-top: 1rem; display: flex; align-items: center; gap: 1rem;">
+                           <img src="https://via.placeholder.com/50x50/4ecdc4/ffffff?text=JK" style="width: 50px; height: 50px; border-radius: 50%;">
+                           <div>
+                               <strong>John Kamau</strong><br>
+                               <small>Mombasa County Franchise</small>
+                           </div>
+                       </div>
+                   </div>
+                   <div style="background: white; padding: 2rem; border-radius: 15px;">
+                       <p><em>"The agricultural drone services have transformed farming in our region. Farmers are seeing 20% yield improvements."</em></p>
+                       <div style="margin-top: 1rem; display: flex; align-items: center; gap: 1rem;">
+                           <img src="https://via.placeholder.com/50x50/667eea/ffffff?text=MW" style="width: 50px; height: 50px; border-radius: 50%;">
+                           <div>
+                               <strong>Mary Wanjiku</strong><br>
+                               <small>Nakuru County Franchise</small>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Application Form -->
+           <div class="contact-form" style="max-width: 600px; margin: 0 auto;">
+               <h3>Apply for Franchise Opportunity</h3>
+               <form id="franchiseForm">
+                   <div class="form-group">
+                       <label for="franchiseName">Full Name</label>
+                       <input type="text" id="franchiseName" name="franchiseName" required>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="county">Preferred County/Region</label>
+                       <select id="county" name="county" required>
+                           <option value="">Select County...</option>
+                           <option value="nairobi">Nairobi</option>
+                           <option value="mombasa">Mombasa</option>
+                           <option value="kisumu">Kisumu</option>
+                           <option value="nakuru">Nakuru</option>
+                           <option value="eldoret">Uasin Gishu (Eldoret)</option>
+                           <option value="meru">Meru</option>
+                           <option value="nyeri">Nyeri</option>
+                           <option value="other">Other County</option>
+                       </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="background">Professional Background</label>
+                       <select id="background" name="background" required>
+                           <option value="">Select background...</option>
+                           <option value="business">Business/Entrepreneurship</option>
+                           <option value="engineering">Engineering/Technical</option>
+                           <option value="agriculture">Agriculture/Farming</option>
+                           <option value="photography">Photography/Videography</option>
+                           <option value="aviation">Aviation/Military</option>
+                           <option value="other">Other</option>
+                       </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="experience">Relevant Experience</label>
+                       <textarea id="experience" name="experience" rows="4" placeholder="Tell us about your relevant experience and why you're interested in drone technology..."></textarea>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="investment">Investment Capacity</label>
+                       <select id="investment" name="investment" required>
+                           <option value="">Select range...</option>
+                           <option value="500k-1m">KES 500K - 1M</option>
+                           <option value="1m-2m">KES 1M - 2M</option>
+                           <option value="2m+">KES 2M+</option>
+                       </select>
+                   </div>
+
+                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                       <div class="form-group">
+                           <label for="franchisePhone">Phone Number</label>
+                           <input type="tel" id="franchisePhone" name="franchisePhone" placeholder="+254..." required>
+                       </div>
+                       <div class="form-group">
+                           <label for="franchiseEmail">Email Address</label>
+                           <input type="email" id="franchiseEmail" name="franchiseEmail" required>
+                       </div>
+                   </div>
+
+                   <button type="submit" class="btn-primary" style="width: 100%;">
+                       <i class="fas fa-handshake"></i>
+                       Submit Franchise Application
+                   </button>
+               </form>
+           </div>
+       </div>
+   </section>
+
+   <!-- Portfolio Section -->
+   <section id="portfolio" class="portfolio">
+       <div class="section-header">
+           <h2 style="color: white;">Our Work Speaks for Itself</h2>
+           <p style="color: #ccc;">Showcasing Kenya's most innovative drone projects</p>
+       </div>
+
+       <div class="portfolio-filters">
+           <button class="filter-btn active" data-filter="all">All Projects</button>
+           <button class="filter-btn" data-filter="events">Events</button>
+           <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+           <button class="filter-btn" data-filter="mapping">Mapping</button>
+           <button class="filter-btn" data-filter="solar">Solar</button>
+           <button class="filter-btn" data-filter="construction">Construction</button>
+       </div>
+
+       <div class="portfolio-grid">
+            <div> <div class="portfolio-item" data-category="events">
+               <img src="https://via.placeholder.com/400x225/ff9a56/ffffff?text=Safari+Lodge+Wedding" alt="Safari Lodge Wedding">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Safari Lodge Wedding</h3>
+                       <p>Maasai Mara • 4K Aerial Cinematography</p>
+                       <i class="fas fa-play-circle" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="agriculture">
+               <img src="https://via.placeholder.com/400x225/4ecdc4/ffffff?text=Coffee+Farm+Monitoring" alt="Coffee Farm Monitoring">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Coffee Farm Health Analysis</h3>
+                       <p>Kiambu County • Precision Agriculture</p>
+                       <i class="fas fa-chart-line" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="mapping">
+               <img src="https://via.placeholder.com/400x225/667eea/ffffff?text=Mining+Survey" alt="Mining Survey">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Mining Site Survey</h3>
+                       <p>Taita Taveta • Topographical Mapping</p>
+                       <i class="fas fa-map" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="solar">
+               <img src="https://via.placeholder.com/400x225/f5576c/ffffff?text=Solar+Farm+Inspection" alt="Solar Farm Inspection">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Solar Farm Thermal Inspection</h3>
+                       <p>Garissa County • Fault Detection</p>
+                       <i class="fas fa-thermometer-half" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="construction">
+               <img src="https://via.placeholder.com/400x225/44a08d/ffffff?text=Highway+Construction" alt="Highway Construction">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Highway Construction Progress</h3>
+                       <p>Nairobi-Nakuru Highway • Progress Tracking</p>
+                       <i class="fas fa-road" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="events">
+               <img src="https://via.placeholder.com/400x225/764ba2/ffffff?text=Corporate+Event" alt="Corporate Event">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Corporate Launch Event</h3>
+                       <p>KICC Nairobi • Live Streaming</p>
+                       <i class="fas fa-video" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="agriculture">
+               <img src="https://via.placeholder.com/400x225/ff6b6b/ffffff?text=Wheat+Field+Spraying" alt="Wheat Field Spraying">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>Precision Crop Spraying</h3>
+                       <p>Rift Valley • Pesticide Application</p>
+                       <i class="fas fa-spray-can" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+
+           <div class="portfolio-item" data-category="events">
+               <img src="https://via.placeholder.com/400x225/ffd93d/ffffff?text=Drone+Light+Show" alt="Drone Light Show">
+               <div class="portfolio-overlay">
+                   <div style="text-align: center;">
+                       <h3>New Year Light Show</h3>
+                       <p>Uhuru Gardens • 100 Drone Display</p>
+                       <i class="fas fa-magic" style="font-size: 3rem; margin-top: 1rem;"></i>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Blog Section -->
+   <section id="blog" class="blog">
+       <div class="section-header">
+           <h2>Insights & Industry Updates</h2>
+           <p>Stay informed about drone technology trends in Kenya and Africa</p>
+       </div>
+
+       <div class="blog-grid">
+           <article class="blog-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/4ecdc4/ffffff?text=Kenya+Agriculture" alt="Drone Agriculture">
+               <div class="blog-content">
+                   <div class="blog-meta">
+                       <span><i class="fas fa-calendar"></i> July 15, 2025</span>
+                       <span><i class="fas fa-tag"></i> Agriculture</span>
+                   </div>
+                   <h3>How Drones are Revolutionizing Kenyan Agriculture</h3>
+                   <p>Discover how precision agriculture is transforming farming practices across Kenya, from the highlands of Central Kenya to the arid regions of Northern Kenya.</p>
+                   <a href="#" class="btn-primary">Read More</a>
+               </div>
+           </article>
+
+           <article class="blog-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/667eea/ffffff?text=KCAA+Regulations" alt="KCAA Regulations">
+               <div class="blog-content">
+                   <div class="blog-meta">
+                       <span><i class="fas fa-calendar"></i> July 10, 2025</span>
+                       <span><i class="fas fa-tag"></i> Legal</span>
+                   </div>
+                   <h3>Top 5 Legal Tips Before Flying a Drone in Kenya</h3>
+                   <p>Navigate Kenya's drone regulations with confidence. Essential KCAA compliance tips every drone operator needs to know.</p>
+                   <a href="#" class="btn-primary">Read More</a>
+               </div>
+           </article>
+
+           <article class="blog-card micro-interaction">
+               <img src="https://via.placeholder.com/400x200/ff9a56/ffffff?text=Eco+Friendly+Shows" alt="Eco Friendly Shows">
+               <div class="blog-content">
+                   <div class="blog-meta">
+                       <span><i class="fas fa-calendar"></i> July 5, 2025</span>
+                       <span><i class="fas fa-tag"></i> Environment</span>
+                   </div>
+                   <h3>Drone Light Shows: Eco-Friendly Alternative to Fireworks</h3>
+                   <p>Why drone light shows are becoming the preferred choice for sustainable celebrations across Kenya's major cities and cultural events.</p>
+                   <a href="#" class="btn-primary">Read More</a>
+               </div>
+           </article>
+       </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+       <div class="section-header">
+           <h2>Get in Touch</h2>
+           <p>Ready to take your project to the skies? Let's discuss your drone needs</p>
+       </div>
+
+       <div class="contact-container">
+           <div class="contact-info">
+               <h3>Contact Information</h3>
+               
+               <div class="contact-item">
+                   <i class="fas fa-map-marker-alt"></i>
+                   <div>
+                       <strong>Headquarters</strong>
+                       <p>Aviation Plaza, Wilson Airport<br>Nairobi, Kenya</p>
+                   </div>
+               </div>
+
+               <div class="contact-item">
+                   <i class="fas fa-phone"></i>
+                   <div>
+                       <strong>Phone</strong>
+                       <p>+254 700 123 456<br>+254 733 987 654</p>
+                   </div>
+               </div>
+
+               <div class="contact-item">
+                   <i class="fas fa-envelope"></i>
+                   <div>
+                       <strong>Email</strong>
+                       <p>info@ecoscan.co.ke<br>support@ecoscan.co.ke</p>
+                   </div>
+               </div>
+
+               <div class="contact-item">
+                   <i class="fas fa-clock"></i>
+                   <div>
+                       <strong>Business Hours</strong>
+                       <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM<br>24/7 Emergency Response</p>
+                   </div>
+               </div>
+
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+
+           <div class="contact-form">
+               <h3>Send Us a Message</h3>
+               <form id="contactForm">
+                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                       <div class="form-group">
+                           <label for="contactName">Name</label>
+                           <input type="text" id="contactName" name="contactName" required>
+                       </div>
+                       <div class="form-group">
+                           <label for="contactPhone">Phone</label>
+                           <input type="tel" id="contactPhone" name="contactPhone" placeholder="+254...">
+                       </div>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="contactEmail">Email</label>
+                       <input type="email" id="contactEmail" name="contactEmail" required>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="reason">Reason for Contact</label>
+                       <select id="reason" name="reason" required>
+                           <option value="">Select reason...</option>
+                           <option value="hire">Hire a Drone</option>
+                           <option value="import">Import Assistance</option>
+                           <option value="franchise">Franchise Opportunity</option>
+                           <option value="partnership">Partnership Inquiry</option>
+                           <option value="support">Technical Support</option>
+                           <option value="general">General Inquiry</option>
+                       </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="message">Message</label>
+                       <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+                   </div>
+
+                   <button type="submit" class="btn-primary" style="width: 100%;">
+                       <i class="fas fa-paper-plane"></i>
+                       Send Message
+                   </button>
+               </form>
+           </div>
+       </div>
+
+       <!-- Map Section -->
+       <div style="margin-top: 4rem; height: 300px; background: #f0f0f0; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+           <div style="text-align: center;">
+               <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
+               <h3>Wilson Airport, Nairobi</h3>
+               <p>Interactive map integration available</p>
+           </div>
+       </div>
+   </section>
+
+   <!-- Newsletter Section -->
+   <section class="newsletter">
+       <h2>Stay Updated on Drone Technology</h2>
+       <p>Get the latest insights, industry updates, and exclusive offers delivered to your inbox</p>
+       <form class="newsletter-form">
+           <input type="email" placeholder="Enter your email address" required>
+           <button type="submit">Subscribe</button>
+       </form>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+       <div class="footer-content">
+           <div class="footer-section">
+               <h3>Eco Scan Drone Solutions</h3>
+               <p>Leading drone technology services across Kenya and East Africa. KCAA licensed and compliant.</p>
+               <div class="social-links">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+           </div>
+
+           <div class="footer-section">
+               <h3>Services</h3>
+               <ul style="list-style: none;">
+                   <li><a href="#services">Live Events & Cinematography</a></li>
+                   <li><a href="#services">Agricultural Applications</a></li>
+                   <li><a href="#services">Industrial Inspections</a></li>
+                   <li><a href="#services">Solar Panel Inspections</a></li>
+                   <li><a href="#services">Mapping & Surveying</a></li>
+                   <li><a href="#services">Drone Light Shows</a></li>
+               </ul>
+           </div>
+
+           <div class="footer-section">
+               <h3>Quick Links</h3>
+               <ul style="list-style: none;">
+                   <li><a href="#about">About Us</a></li>
+                   <li><a href="#hire">Hire a Drone</a></li>
+                   <li><a href="#import">Import Services</a></li>
+                   <li><a href="#franchise">Franchise Opportunities</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#blog">Blog & Insights</a></li>
+               </ul>
+           </div>
+
+           <div class="footer-section">
+               <h3>Legal & Compliance</h3>
+               <ul style="list-style: none;">
+                   <li><a href="#">KCAA Licensing</a></li>
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Terms of Service</a></li>
+                   <li><a href="#">Safety Guidelines</a></li>
+                   <li><a href="#">Insurance Coverage</a></li>
+               </ul>
+               <div style="margin-top: 1rem;">
+                   <img src="https://via.placeholder.com/100x40/ffffff/000000?text=KCAA" alt="KCAA Licensed" style="height: 30px; margin-right: 1rem;">
+                   <img src="https://via.placeholder.com/100x40/ffffff/000000?text=DFK" alt="Drone Federation Kenya" style="height: 30px;">
+               </div>
+           </div>
+       </div>
+
+       <div class="footer-bottom">
+           <p>&copy; 2025 Eco Scan Drone Solutions. All rights reserved. | Licensed by Kenya Civil Aviation Authority</p>
+       </div>
+   </footer>
+
+   <!-- Live Chat Widget -->
+   <div class="chat-widget">
+       <i class="fas fa-comments"></i>
+   </div>
+
+   <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

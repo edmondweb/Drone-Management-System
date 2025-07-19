@@ -1,0 +1,227 @@
+Agricultural drone operation data management service system
+web development
+
+
+Website Design for Eco Scan Drone Solutions
+🔵 1. HOMEPAGE
+
+Hero Section
+
+    Fullscreen video loop of drone footage (live events, solar panels, farms, construction sites)
+
+    Headline: “Powering Possibilities Through the Sky”
+
+    Subheading: “Your Trusted Partner for Drone Technology in Kenya”
+
+    CTA Buttons:
+
+        📌 Hire a Drone
+
+        🚀 Import a Drone to Kenya
+
+        🏢 Explore Franchise Opportunities
+
+Quick Links Banner (Icons with text)
+
+    🎬 Live Events
+
+    🚁 Search & Rescue
+
+    🌾 Agriculture
+
+    🏭 Industrial
+
+    🔆 Solar
+
+    🧱 Construction
+
+    📊 Mapping & Survey
+
+    🎇 Light Shows
+
+    📘 Drone Consultancy
+
+🔵 2. ABOUT US
+
+Overview
+
+    Mission: To deliver eco-efficient drone solutions tailored to Africa’s needs
+
+    Vision: To lead innovation in drone tech for sustainable development
+
+    Our Team: Profiles of licensed drone pilots, engineers, and consultants
+
+    Licenses & Partnerships: Show KCAA compliance, partnership with global drone brands
+
+Why Choose Us?
+
+    Local expertise
+
+    Custom packages
+
+    Nationwide service
+
+    Advanced drone fleet
+
+🔵 3. SERVICES
+
+Each key area gets a dedicated section with:
+
+    Hero image
+
+    Brief description
+
+    Key benefits
+
+    Example use cases in Kenya
+
+    CTA: “Get a Quote” or “Book a Demo”
+
+🟢 Sections:
+
+    Live Events & Cinematography – Weddings, festivals, concerts
+
+    Search & Rescue – Disaster zones, floods, forest patrols
+
+    Agricultural Applications – Drone seeding, crop health monitoring
+
+    Industrial Inspections – Towers, pipelines, offshore rigs
+
+    Solar Inspections – Panel fault detection and optimization
+
+    Construction Inspections – Progress tracking, safety audits
+
+    Drone Consultancy – Licensing, compliance, training
+
+    Mapping & Surveys – Land registry, real estate, mining
+
+    Drone Light Shows – Custom pyro shows for public/private events
+
+🔵 4. HIRE A DRONE (Booking Portal)
+
+Page Features:
+
+    Step-by-step wizard:
+
+        Select use case
+
+        Choose location & date
+
+        Select drone package (standard/professional/custom)
+
+        Upload special instructions
+
+        Confirm and pay (M-PESA, Visa, etc.)
+
+Add-ons:
+
+    Operator included
+
+    Night vision or thermal imaging
+
+    Post-production editing
+
+🔵 5. DRONE IMPORTATION (Kenya)
+
+Page Title: “Import a Drone to Kenya – Hassle-Free”
+
+    Explanation of drone importation laws in Kenya
+
+    Supported brands: DJI, Parrot, Autel, etc.
+
+    Form for users:
+
+        Select model
+
+        Upload invoice
+
+        Provide purpose of use
+
+        Import license support options
+
+    CTA: “Request Import Assistance”
+
+    FAQs: KCAA permits, customs, clearance
+
+🔵 6. FRANCHISE OPPORTUNITIES
+
+Title: “Become a Drone Tech Leader in Your County”
+
+Sections:
+
+    What You Get: Branding, tech support, equipment leasing
+
+    Who We’re Looking For: Professionals, entrepreneurs, farmers, engineers
+
+    Investment Requirements
+
+    Franchisee Testimonials
+
+    Application Form: Name, County, Background, Why You Want a Franchise
+
+🔵 7. PROJECTS / PORTFOLIO
+
+Showcase past work:
+
+    Photo & video gallery (optimized)
+
+    Filter by industry: Events | Agriculture | Mapping | Solar | Construction
+
+    Each project:
+
+        Overview
+
+        Problem
+
+        Drone used
+
+        Outcome/impact
+
+        Client quote/testimonial
+
+🔵 8. BLOG / INSIGHTS
+
+Sample Topics:
+
+    “How Drones are Revolutionizing Kenyan Agriculture”
+
+    “Top 5 Legal Tips Before Flying a Drone in Kenya”
+
+    “Drone Light Shows: Eco-Friendly Alternative to Fireworks”
+
+    CTA on each blog: “Talk to a Drone Expert”
+
+🔵 9. CONTACT US
+
+Form: Name, Email, Phone, Reason for Contact
+Dropdown Options: Hire | Import | Franchise | General Inquiry
+Location Map: Nairobi HQ + regional hubs
+Social Links: Facebook, Instagram, LinkedIn, YouTube
+Live Chat Widget: Optional for immediate support
+🔵 10. FOOTER
+
+    Quick Links: Services, About, Contact, Blog
+
+    CTA Banner:
+
+        “Let’s Take Your Vision to the Skies” → [Hire a Drone]
+
+    Newsletter Signup: “Stay updated on drone tech and offers”
+
+    Licenses & Memberships: KCAA logo, Drone Federation of Kenya
+
+🌐 Technical/Design Considerations
+
+    Mobile-first responsive design
+
+    Multilingual Option: English & Swahili
+
+    SEO Optimization: Location-based keywords e.g., “Drone services in Kenya”
+
+    Fast-loading media galleries
+
+    Dark mode/light mode toggle (optional)
+
+    Accessibility compliant
+
+Would you like me to generate mockups, color palette suggestions, or content for specific pages (e.g., Services or Franchise page)?
